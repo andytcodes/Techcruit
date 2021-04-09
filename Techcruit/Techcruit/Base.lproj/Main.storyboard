@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5nl-bL-pix">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Techcruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wBD-BC-NQO">
+                                <rect key="frame" x="40" y="642" width="334" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRq-D3-XOy">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Dvf-66-dhO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="21"/>
+                                        <state key="normal" title="Sign up">
+                                            <color key="titleColor" red="0.87450980392156863" green="0.77254901960784317" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="c1W-yI-GXT" kind="show" id="hgD-T5-8lt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgD-er-raO">
+                                        <rect key="frame" x="0.0" y="100" width="334" height="80"/>
+                                        <color key="backgroundColor" red="0.12941176470588234" green="0.12549019607843137" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="qKE-dd-vgZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="21"/>
+                                        <state key="normal" title="Log in">
+                                            <color key="titleColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="CnK-eD-SCd" kind="show" id="kBC-jR-h34"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tgD-er-raO" firstAttribute="height" secondItem="LRq-D3-XOy" secondAttribute="height" id="uKn-hI-z2i"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xi-Lg-Asm">
+                                <rect key="frame" x="0.0" y="572" width="414" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Techcruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMS-hj-sZV">
+                                <rect key="frame" x="-36" y="516" width="486" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980392156863" green="0.77254901960784317" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Techcruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a5-I7-3St">
+                                <rect key="frame" x="-36" y="521" width="486" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laptop-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hdz-FM-p7d">
+                                <rect key="frame" x="-223" y="-33" width="1102" height="677"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-hX-SWH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12941176470588234" green="0.12549019607843137" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="undraw_working" translatesAutoresizingMaskIntoConstraints="NO" id="cKx-E0-dvd">
+                                <rect key="frame" x="-353" y="111" width="915" height="488"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wBD-BC-NQO" secondAttribute="trailing" constant="40" id="Hgy-fT-axs"/>
+                            <constraint firstItem="wBD-BC-NQO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Y5L-3t-xGE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wBD-BC-NQO" secondAttribute="bottom" constant="40" id="dcG-zm-DOt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Cg-q9-td4"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="tgD-er-raO" id="6x0-Vl-Yo7"/>
+                        <outlet property="btnSignUp" destination="LRq-D3-XOy" id="Zga-4o-FYA"/>
+                        <outlet property="imgBtmBG" destination="0xi-Lg-Asm" id="xPb-7u-vky"/>
+                        <outlet property="imgLaptop" destination="hdz-FM-p7d" id="gsc-2e-d4M"/>
+                        <outlet property="imgLaptopOverlay" destination="KDc-hX-SWH" id="VBE-u8-iAX"/>
+                        <outlet property="imgUndraw" destination="cKx-E0-dvd" id="lxt-Zp-8gn"/>
+                        <outlet property="lblLogo" destination="qMS-hj-sZV" id="K4z-kx-UiR"/>
+                        <outlet property="lblLogoOp" destination="7a5-I7-3St" id="L3c-sO-VZa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708.69565217391312" y="99.776785714285708"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="T3G-gF-XWd">
+            <objects>
+                <viewController id="c1W-yI-GXT" customClass="SignUpViewController" customModule="Techcruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sW9-OL-THp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yq4-be-ceh">
+                                <rect key="frame" x="40" y="314" width="334" height="354"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VcQ-g3-t6S">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qe7-3k-S3L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1j-UV-oiM">
+                                        <rect key="frame" x="0.0" y="60" width="334" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRM-Xc-S7J">
+                                        <rect key="frame" x="0.0" y="120" width="334" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lG1-ZC-jAs">
+                                        <rect key="frame" x="0.0" y="180" width="334" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS3-di-2tG">
+                                        <rect key="frame" x="0.0" y="240" width="334" height="70"/>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="XIc-eU-QCx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="20"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.35686274509803922" green="0.36078431372549019" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="c1W-yI-GXT" eventType="touchUpInside" id="cdB-uU-KIe"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZJ-8E-3pJ">
+                                        <rect key="frame" x="0.0" y="330" width="334" height="24"/>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="15"/>
+                                        <color key="textColor" red="0.99470776319999998" green="0.1965288818" blue="0.1786046922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="R1j-UV-oiM" firstAttribute="height" secondItem="VcQ-g3-t6S" secondAttribute="height" id="Lu1-on-zqc"/>
+                                    <constraint firstItem="CRM-Xc-S7J" firstAttribute="height" secondItem="VcQ-g3-t6S" secondAttribute="height" id="UiO-Z8-YYB"/>
+                                    <constraint firstItem="lG1-ZC-jAs" firstAttribute="height" secondItem="VcQ-g3-t6S" secondAttribute="height" id="WAD-rT-Qc4"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avk-gB-Jf8">
+                                <rect key="frame" x="0.0" y="114" width="414" height="782"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjB-Hs-oBc">
+                                <rect key="frame" x="-36" y="174" width="486" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Techcruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-o7-to1">
+                                <rect key="frame" x="-39" y="37" width="486" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Techcruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmT-bK-UCC">
+                                <rect key="frame" x="-39" y="42" width="486" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laptop-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DQS-K9-jQM">
+                                <rect key="frame" x="0.0" y="-150" width="805" height="604"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4m-Du-Hln">
+                                <rect key="frame" x="0.0" y="-123" width="414" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz6-B1-Rog">
+                                <rect key="frame" x="350" y="829" width="43" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lHG-jp-VxZ" kind="unwind" unwindAction="unwindToMainWithSender:" id="Ndl-Cb-ohP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WE0-3p-Ehl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yq4-be-ceh" firstAttribute="top" secondItem="WE0-3p-Ehl" secondAttribute="top" constant="270" id="300-rU-0d8"/>
+                            <constraint firstItem="Yq4-be-ceh" firstAttribute="leading" secondItem="WE0-3p-Ehl" secondAttribute="leading" constant="40" id="4Li-lS-VDN"/>
+                            <constraint firstItem="WE0-3p-Ehl" firstAttribute="trailing" secondItem="Yq4-be-ceh" secondAttribute="trailing" constant="40" id="Akm-tX-hHl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WpP-Aa-MG0"/>
+                    <connections>
+                        <outlet property="btnSignUp" destination="SS3-di-2tG" id="7Kq-DL-DQv"/>
+                        <outlet property="imgBg" destination="avk-gB-Jf8" id="S7Y-Ls-7Ep"/>
+                        <outlet property="imgLaptop" destination="DQS-K9-jQM" id="vRi-p9-zd3"/>
+                        <outlet property="imgLaptopOverlay" destination="Y4m-Du-Hln" id="W5s-kG-anW"/>
+                        <outlet property="lblError" destination="MZJ-8E-3pJ" id="94C-Km-7tm"/>
+                        <outlet property="lblLogo" destination="BDv-o7-to1" id="Ocf-6X-Wuh"/>
+                        <outlet property="lblLogoOp" destination="ZmT-bK-UCC" id="W4g-dQ-iNv"/>
+                        <outlet property="tfEmail" destination="CRM-Xc-S7J" id="DbQ-n2-WWp"/>
+                        <outlet property="tfFirstName" destination="VcQ-g3-t6S" id="akd-IM-BIr"/>
+                        <outlet property="tfLastName" destination="R1j-UV-oiM" id="AH9-hM-exn"/>
+                        <outlet property="tfPassword" destination="lG1-ZC-jAs" id="h8r-qA-3l4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyE-YW-fOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lHG-jp-VxZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1569.5652173913045" y="-212.27678571428569"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="kYN-1L-bhk">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="gvb-gJ-1Rv" customClass="HomeViewController" customModule="Techcruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6wZ-ee-4cI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfU-1F-sOM">
+                                <rect key="frame" x="176" y="437.5" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Kl-zA-rbn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MfU-1F-sOM" firstAttribute="centerX" secondItem="6wZ-ee-4cI" secondAttribute="centerX" id="W4l-au-Q7F"/>
+                            <constraint firstItem="MfU-1F-sOM" firstAttribute="centerY" secondItem="6wZ-ee-4cI" secondAttribute="centerY" id="zhY-Pk-gpe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zi0-3f-ffi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357" y="130"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="RTN-d4-kS9">
+            <objects>
+                <viewController id="CnK-eD-SCd" customClass="LoginViewController" customModule="Techcruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lV-oh-PsI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TVu-eQ-zsJ">
+                                <rect key="frame" x="40" y="314" width="334" height="229.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEF-ZP-LCi">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sK1-hW-S6J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-HP-SsX">
+                                        <rect key="frame" x="0.0" y="60" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXZ-xV-EIO">
+                                        <rect key="frame" x="0.0" y="114" width="334" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="ZkQ-MO-xu3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.35686274509803922" green="0.36078431372549019" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="CnK-eD-SCd" eventType="touchUpInside" id="e5a-CB-GU7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jop-kv-YT2">
+                                        <rect key="frame" x="0.0" y="204" width="334" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="16"/>
+                                        <color key="textColor" red="0.99470776319999998" green="0.1965288818" blue="0.1786046922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SEF-ZP-LCi" firstAttribute="height" secondItem="tzP-HP-SsX" secondAttribute="height" multiplier="1.17647" id="SMq-vf-8B5"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laptop-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b39-TS-anS">
+                                <rect key="frame" x="0.0" y="-178" width="805" height="621"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-Tj-2vL">
+                                <rect key="frame" x="0.0" y="117" width="414" height="782"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-VK-oYO">
+                                <rect key="frame" x="0.0" y="-120" width="414" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Techcruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6W-yu-mGY">
+                                <rect key="frame" x="-39" y="45" width="486" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOG IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-jT-tjo">
+                                <rect key="frame" x="-36" y="177" width="486" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Techcruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQX-0h-Kdv">
+                                <rect key="frame" x="-39" y="40" width="486" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="102"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-lg-b2x">
+                                <rect key="frame" x="350" y="829" width="43" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.7725490196" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F4B-dx-QK6" kind="unwind" unwindAction="unwindToMainWithSender:" id="UJa-f3-xI8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Zs-Np-6m8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Zs-Np-6m8" firstAttribute="trailing" secondItem="TVu-eQ-zsJ" secondAttribute="trailing" constant="40" id="1VS-X0-svW"/>
+                            <constraint firstItem="TVu-eQ-zsJ" firstAttribute="leading" secondItem="7Zs-Np-6m8" secondAttribute="leading" constant="40" id="dU4-gH-ww2"/>
+                            <constraint firstItem="TVu-eQ-zsJ" firstAttribute="top" secondItem="7Zs-Np-6m8" secondAttribute="top" constant="270" id="puM-xq-5dd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7mo-E7-1do"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="yXZ-xV-EIO" id="Rag-Xd-Xj0"/>
+                        <outlet property="imgBg" destination="c1f-Tj-2vL" id="dPO-0s-xjO"/>
+                        <outlet property="imgLaptop" destination="b39-TS-anS" id="KTI-M3-hfl"/>
+                        <outlet property="imgLaptopOverlaye" destination="qUZ-VK-oYO" id="MJf-dd-hzb"/>
+                        <outlet property="lblError" destination="Jop-kv-YT2" id="STJ-yU-aTO"/>
+                        <outlet property="lblLogo" destination="HQX-0h-Kdv" id="dIj-vn-g4z"/>
+                        <outlet property="tfEmail" destination="SEF-ZP-LCi" id="jpG-YS-YcK"/>
+                        <outlet property="tfPassword" destination="tzP-HP-SsX" id="C3i-mT-mzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccm-H0-wxB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="F4B-dx-QK6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1569.5652173913045" y="455.35714285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tdP-LN-KrJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5nl-bL-pix" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bHI-2u-vCa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ug7-hX-SAe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXd-pM-nTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201.44927536231884" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="laptop-bg.jpg" width="6000" height="3376"/>
+        <image name="undraw_working" width="1144" height="637"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
