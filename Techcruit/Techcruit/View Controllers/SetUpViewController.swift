@@ -48,7 +48,7 @@ class SetUpViewController: UIViewController {
         Utilities.tfStyle(tf: tfGithubURL)
     }
     
-
+    //example of updating user data. If field does not already exist, it will add the field
     @IBAction func OnClickSetUp(_ sender: Any) {
         let db = Firestore.firestore()
         let user = Auth.auth().currentUser?.uid

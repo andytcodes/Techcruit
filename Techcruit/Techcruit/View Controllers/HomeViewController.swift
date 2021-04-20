@@ -18,14 +18,16 @@ class HomeViewController: UIViewController {
         //let user = Auth.auth().currentUser?.uid
         //print(user)
         
+        //example: getting full user document
         let db = Firestore.firestore()
         let user = Auth.auth().currentUser?.uid
         let userDbRef = db.collection("users").document(user!)
+        
         userDbRef.getDocument { (document, error) in
             if let document = document, document.exists {
                 let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                 print("Document data: \(dataDescription)")
-                print(document.data()?["lastname"])
+                print(document.data()?["lastname"]) // example: how to get data from user
             } else {
                 print("Document does not exist")
             }
