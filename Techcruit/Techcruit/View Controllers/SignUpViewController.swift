@@ -82,6 +82,7 @@ class SignUpViewController: UIViewController {
                     //User was created successfully, store info
                     let db = Firestore.firestore()
                     
+                    //stores user data info into user collection. DocumentID is set to UID
                     db.collection("users").document(result!.user.uid).setData(["firstname": firstName, "lastname": lastName, "email": email, "password": password, "uid": result!.user.uid]) { (error) in
                         
                         if error != nil{
@@ -89,19 +90,28 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     
+//                    let user = User(firstname: firstName, lastname: lastName, email: email, password: password, uid: result!.user.uid)
+//
+//                    do {
+//                        try db.collection("users").document(result!.user.uid).setData(["" : user])
+//                    } catch let error {
+//                        print("Error writing user to Firestore: \(error)")
+//                    }
+
+                    
                     //Transition into home screen
-                    self.transitionToHome()
+                    self.transitionToProfileSetup()
                 }
                 
             }
         }
     }
     
-    func transitionToHome(){
+    func transitionToProfileSetup(){
         //reference to homeviewcontroller
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let setUpViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.setUpViewController) as? SetUpViewController
         
-        view.window?.rootViewController = homeViewController
+        view.window?.rootViewController = setUpViewController
         view.window?.makeKeyAndVisible()
     }
     

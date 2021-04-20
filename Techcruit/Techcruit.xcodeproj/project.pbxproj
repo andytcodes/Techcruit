@@ -21,6 +21,8 @@
 		A117F0F6261FF56300E68A5F /* laptop-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A117F0F5261FF56300E68A5F /* laptop-bg.jpg */; };
 		A117F10526201CA200E68A5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A117F10426201CA200E68A5F /* GoogleService-Info.plist */; };
 		A117F12C26203CCA00E68A5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F12B26203CCA00E68A5F /* Constants.swift */; };
+		A1A2E1AD262E5C6000B5DF80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2E1AC262E5C6000B5DF80 /* User.swift */; };
+		A1A2E1B0262E641C00B5DF80 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		A117F0F5261FF56300E68A5F /* laptop-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "laptop-bg.jpg"; path = "../../../../../../../Downloads/laptop-bg.jpg"; sourceTree = "<group>"; };
 		A117F10426201CA200E68A5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A117F12B26203CCA00E68A5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1A2E1AC262E5C6000B5DF80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		F09B3C923F6AA0A6F7150470 /* Pods_Techcruit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techcruit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,7 @@
 		A117F0CA261FC55100E68A5F /* Techcruit */ = {
 			isa = PBXGroup;
 			children = (
+				A1A2E1AB262E5C5000B5DF80 /* Classes */,
 				A117F0F4261FF54400E68A5F /* Images */,
 				A117F0EB261FEAEC00E68A5F /* Helpers */,
 				A117F0E9261FC5B300E68A5F /* View Controllers */,
@@ -107,6 +112,7 @@
 				A117F0E3261FC5A300E68A5F /* LoginViewController.swift */,
 				A117F0E6261FC5AF00E68A5F /* HomeViewController.swift */,
 				A117F0E0261FC59800E68A5F /* SignUpViewController.swift */,
+				A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -126,6 +132,14 @@
 				A117F0F5261FF56300E68A5F /* laptop-bg.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		A1A2E1AB262E5C5000B5DF80 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A1A2E1AC262E5C6000B5DF80 /* User.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D069BC606C3AD5D9B717638C /* Frameworks */ = {
@@ -256,7 +270,9 @@
 				A117F0CC261FC55100E68A5F /* AppDelegate.swift in Sources */,
 				A117F0F2261FEB2F00E68A5F /* Utilities.swift in Sources */,
 				A117F0E1261FC59800E68A5F /* SignUpViewController.swift in Sources */,
+				A1A2E1B0262E641C00B5DF80 /* SetUpViewController.swift in Sources */,
 				A117F0E4261FC5A300E68A5F /* LoginViewController.swift in Sources */,
+				A1A2E1AD262E5C6000B5DF80 /* User.swift in Sources */,
 				A117F0CE261FC55100E68A5F /* SceneDelegate.swift in Sources */,
 				A117F0E7261FC5AF00E68A5F /* HomeViewController.swift in Sources */,
 				A117F12C26203CCA00E68A5F /* Constants.swift in Sources */,
