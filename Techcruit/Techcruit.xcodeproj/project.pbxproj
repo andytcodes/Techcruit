@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CDFDBD7262FC0BA00D9D86E /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFDBD6262FC0BA00D9D86E /* UserProfileViewController.swift */; };
+		1CDFDBDA262FD74F00D9D86E /* LinkedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFDBD9262FD74F00D9D86E /* LinkedInViewController.swift */; };
+		1CDFDBDD262FD79C00D9D86E /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFDBDC262FD79C00D9D86E /* PortfolioViewController.swift */; };
 		201E5AB1E829C3B759BDA096 /* Pods_Techcruit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09B3C923F6AA0A6F7150470 /* Pods_Techcruit.framework */; };
 		A117F0CC261FC55100E68A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F0CB261FC55100E68A5F /* AppDelegate.swift */; };
 		A117F0CE261FC55100E68A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F0CD261FC55100E68A5F /* SceneDelegate.swift */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		016A4C909E5B7373A5CD92EC /* Pods-Techcruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techcruit.release.xcconfig"; path = "Target Support Files/Pods-Techcruit/Pods-Techcruit.release.xcconfig"; sourceTree = "<group>"; };
+		1CDFDBD6262FC0BA00D9D86E /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		1CDFDBD9262FD74F00D9D86E /* LinkedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInViewController.swift; sourceTree = "<group>"; };
+		1CDFDBDC262FD79C00D9D86E /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		2C5417ACD4A761441DDC2354 /* Pods-Techcruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techcruit.debug.xcconfig"; path = "Target Support Files/Pods-Techcruit/Pods-Techcruit.debug.xcconfig"; sourceTree = "<group>"; };
 		A117F0C8261FC55100E68A5F /* Techcruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techcruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A117F0CB261FC55100E68A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				A117F0E6261FC5AF00E68A5F /* HomeViewController.swift */,
 				A117F0E0261FC59800E68A5F /* SignUpViewController.swift */,
 				A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */,
+				1CDFDBD6262FC0BA00D9D86E /* UserProfileViewController.swift */,
+				1CDFDBD9262FD74F00D9D86E /* LinkedInViewController.swift */,
+				1CDFDBDC262FD79C00D9D86E /* PortfolioViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDFDBDD262FD79C00D9D86E /* PortfolioViewController.swift in Sources */,
 				A117F0D0261FC55100E68A5F /* ViewController.swift in Sources */,
 				A117F0CC261FC55100E68A5F /* AppDelegate.swift in Sources */,
 				A117F0F2261FEB2F00E68A5F /* Utilities.swift in Sources */,
@@ -274,7 +284,9 @@
 				A117F0E4261FC5A300E68A5F /* LoginViewController.swift in Sources */,
 				A1A2E1AD262E5C6000B5DF80 /* User.swift in Sources */,
 				A117F0CE261FC55100E68A5F /* SceneDelegate.swift in Sources */,
+				1CDFDBDA262FD74F00D9D86E /* LinkedInViewController.swift in Sources */,
 				A117F0E7261FC5AF00E68A5F /* HomeViewController.swift in Sources */,
+				1CDFDBD7262FC0BA00D9D86E /* UserProfileViewController.swift in Sources */,
 				A117F12C26203CCA00E68A5F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
