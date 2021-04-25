@@ -16,11 +16,19 @@
 		A117F0D8261FC55200E68A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A117F0D6261FC55200E68A5F /* LaunchScreen.storyboard */; };
 		A117F0E1261FC59800E68A5F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F0E0261FC59800E68A5F /* SignUpViewController.swift */; };
 		A117F0E4261FC5A300E68A5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F0E3261FC5A300E68A5F /* LoginViewController.swift */; };
-		A117F0E7261FC5AF00E68A5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F0E6261FC5AF00E68A5F /* HomeViewController.swift */; };
 		A117F0F2261FEB2F00E68A5F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F0F1261FEB2F00E68A5F /* Utilities.swift */; };
-		A117F0F6261FF56300E68A5F /* laptop-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A117F0F5261FF56300E68A5F /* laptop-bg.jpg */; };
 		A117F10526201CA200E68A5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A117F10426201CA200E68A5F /* GoogleService-Info.plist */; };
 		A117F12C26203CCA00E68A5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117F12B26203CCA00E68A5F /* Constants.swift */; };
+		A142C47926307EDB00D32D2C /* CellForJobList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142C47826307EDB00D32D2C /* CellForJobList.swift */; };
+		A142C47D26307F1600D32D2C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142C47C26307F1600D32D2C /* Job.swift */; };
+		A142C48026307FDF00D32D2C /* JobListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142C47F26307FDF00D32D2C /* JobListViewController.swift */; };
+		A142C4832630801400D32D2C /* JobPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142C4822630801400D32D2C /* JobPostingViewController.swift */; };
+		A142C4A226309EE500D32D2C /* laptop-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A142C4A126309EE500D32D2C /* laptop-bg.jpg */; };
+		A142C4A62630A03B00D32D2C /* 16897997381548233623.svg in Resources */ = {isa = PBXBuildFile; fileRef = A142C4A52630A03B00D32D2C /* 16897997381548233623.svg */; };
+		A142C4A92630A18800D32D2C /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142C4A82630A18800D32D2C /* UserProfileViewController.swift */; };
+		A142C4AC2630B24F00D32D2C /* 3369881021579090639.svg in Resources */ = {isa = PBXBuildFile; fileRef = A142C4AB2630B24F00D32D2C /* 3369881021579090639.svg */; };
+		A142C4AF2630B6A300D32D2C /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142C4AE2630B6A300D32D2C /* EditViewController.swift */; };
+		A142C4B22630B9D400D32D2C /* 5899562021543238878.svg in Resources */ = {isa = PBXBuildFile; fileRef = A142C4B12630B9D400D32D2C /* 5899562021543238878.svg */; };
 		A1A2E1AD262E5C6000B5DF80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2E1AC262E5C6000B5DF80 /* User.swift */; };
 		A1A2E1B0262E641C00B5DF80 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,11 +46,19 @@
 		A117F0D9261FC55200E68A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A117F0E0261FC59800E68A5F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A117F0E3261FC5A300E68A5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A117F0E6261FC5AF00E68A5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A117F0F1261FEB2F00E68A5F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		A117F0F5261FF56300E68A5F /* laptop-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "laptop-bg.jpg"; path = "../../../../../../../Downloads/laptop-bg.jpg"; sourceTree = "<group>"; };
 		A117F10426201CA200E68A5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A117F12B26203CCA00E68A5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A142C47826307EDB00D32D2C /* CellForJobList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForJobList.swift; sourceTree = "<group>"; };
+		A142C47C26307F1600D32D2C /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		A142C47F26307FDF00D32D2C /* JobListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewController.swift; sourceTree = "<group>"; };
+		A142C4822630801400D32D2C /* JobPostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPostingViewController.swift; sourceTree = "<group>"; };
+		A142C4A126309EE500D32D2C /* laptop-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "laptop-bg.jpg"; sourceTree = "<group>"; };
+		A142C4A52630A03B00D32D2C /* 16897997381548233623.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 16897997381548233623.svg; sourceTree = "<group>"; };
+		A142C4A82630A18800D32D2C /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A142C4AB2630B24F00D32D2C /* 3369881021579090639.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 3369881021579090639.svg; sourceTree = "<group>"; };
+		A142C4AE2630B6A300D32D2C /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		A142C4B12630B9D400D32D2C /* 5899562021543238878.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5899562021543238878.svg; sourceTree = "<group>"; };
 		A1A2E1AC262E5C6000B5DF80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		F09B3C923F6AA0A6F7150470 /* Pods_Techcruit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techcruit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +110,6 @@
 				A117F0F4261FF54400E68A5F /* Images */,
 				A117F0EB261FEAEC00E68A5F /* Helpers */,
 				A117F0E9261FC5B300E68A5F /* View Controllers */,
-				A117F0CB261FC55100E68A5F /* AppDelegate.swift */,
 				A117F0CD261FC55100E68A5F /* SceneDelegate.swift */,
 				A117F0D1261FC55100E68A5F /* Main.storyboard */,
 				A117F0D4261FC55200E68A5F /* Assets.xcassets */,
@@ -110,9 +125,12 @@
 			children = (
 				A117F0CF261FC55100E68A5F /* ViewController.swift */,
 				A117F0E3261FC5A300E68A5F /* LoginViewController.swift */,
-				A117F0E6261FC5AF00E68A5F /* HomeViewController.swift */,
 				A117F0E0261FC59800E68A5F /* SignUpViewController.swift */,
 				A1A2E1AF262E641C00B5DF80 /* SetUpViewController.swift */,
+				A142C47F26307FDF00D32D2C /* JobListViewController.swift */,
+				A142C4822630801400D32D2C /* JobPostingViewController.swift */,
+				A142C4A82630A18800D32D2C /* UserProfileViewController.swift */,
+				A142C4AE2630B6A300D32D2C /* EditViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -129,7 +147,10 @@
 		A117F0F4261FF54400E68A5F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A117F0F5261FF56300E68A5F /* laptop-bg.jpg */,
+				A142C4B12630B9D400D32D2C /* 5899562021543238878.svg */,
+				A142C4AB2630B24F00D32D2C /* 3369881021579090639.svg */,
+				A142C4A52630A03B00D32D2C /* 16897997381548233623.svg */,
+				A142C4A126309EE500D32D2C /* laptop-bg.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -137,7 +158,10 @@
 		A1A2E1AB262E5C5000B5DF80 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A117F0CB261FC55100E68A5F /* AppDelegate.swift */,
 				A1A2E1AC262E5C6000B5DF80 /* User.swift */,
+				A142C47826307EDB00D32D2C /* CellForJobList.swift */,
+				A142C47C26307F1600D32D2C /* Job.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -209,10 +233,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A142C4A62630A03B00D32D2C /* 16897997381548233623.svg in Resources */,
+				A142C4AC2630B24F00D32D2C /* 3369881021579090639.svg in Resources */,
 				A117F0D8261FC55200E68A5F /* LaunchScreen.storyboard in Resources */,
 				A117F0D5261FC55200E68A5F /* Assets.xcassets in Resources */,
+				A142C4B22630B9D400D32D2C /* 5899562021543238878.svg in Resources */,
+				A142C4A226309EE500D32D2C /* laptop-bg.jpg in Resources */,
 				A117F10526201CA200E68A5F /* GoogleService-Info.plist in Resources */,
-				A117F0F6261FF56300E68A5F /* laptop-bg.jpg in Resources */,
 				A117F0D3261FC55100E68A5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,14 +294,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A117F0D0261FC55100E68A5F /* ViewController.swift in Sources */,
+				A142C4A92630A18800D32D2C /* UserProfileViewController.swift in Sources */,
 				A117F0CC261FC55100E68A5F /* AppDelegate.swift in Sources */,
 				A117F0F2261FEB2F00E68A5F /* Utilities.swift in Sources */,
 				A117F0E1261FC59800E68A5F /* SignUpViewController.swift in Sources */,
 				A1A2E1B0262E641C00B5DF80 /* SetUpViewController.swift in Sources */,
 				A117F0E4261FC5A300E68A5F /* LoginViewController.swift in Sources */,
 				A1A2E1AD262E5C6000B5DF80 /* User.swift in Sources */,
+				A142C4AF2630B6A300D32D2C /* EditViewController.swift in Sources */,
+				A142C4832630801400D32D2C /* JobPostingViewController.swift in Sources */,
+				A142C47D26307F1600D32D2C /* Job.swift in Sources */,
 				A117F0CE261FC55100E68A5F /* SceneDelegate.swift in Sources */,
-				A117F0E7261FC5AF00E68A5F /* HomeViewController.swift in Sources */,
+				A142C47926307EDB00D32D2C /* CellForJobList.swift in Sources */,
+				A142C48026307FDF00D32D2C /* JobListViewController.swift in Sources */,
 				A117F12C26203CCA00E68A5F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
