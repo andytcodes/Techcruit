@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//Class for all universal styles
 class Utilities {
     
     //Main Colors (CGColor)
