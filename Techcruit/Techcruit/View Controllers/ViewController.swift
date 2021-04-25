@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Main view with signup and login buttons
 class ViewController: UIViewController {
 
     @IBOutlet weak var btnSignUp: UIButton!

@@ -8,8 +8,10 @@
 import UIKit
 import Firebase
 
+//Set up view, where user adds addition information
 class SetUpViewController: UIViewController {
 
+    //All fields
     @IBOutlet var imgBg : UIImageView!
     @IBOutlet weak var lblLogoClear: UILabel!
     @IBOutlet weak var imgLaptop: UIImageView!
@@ -32,6 +34,7 @@ class SetUpViewController: UIViewController {
         setUp()
     }
     
+    //UI Setup
     func setUp(){
         //bg
         imgBg.layer.cornerRadius = 20
@@ -48,7 +51,7 @@ class SetUpViewController: UIViewController {
         Utilities.tfStyle(tf: tfGithubURL)
     }
     
-    //example of updating user data. If field does not already exist, it will add the field
+    //Upon setup click, update user data document
     @IBAction func OnClickSetUp(_ sender: Any) {
         let db = Firestore.firestore()
         let user = Auth.auth().currentUser?.uid
@@ -68,16 +71,17 @@ class SetUpViewController: UIViewController {
                 print("Error updating document: \(err)")
             } else {
                 print("Document successfully updated")
-                self.transitionToHome()
+                self.transitionToJobs()
             }
         }
     }
     
-    func transitionToHome(){
+    
+    //transitions into jobs page
+    func transitionToJobs(){
         //reference to homeviewcontroller
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
-        view.window?.rootViewController = homeViewController
+        let jobsViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.jobsViewController) as? JobListViewController
+        view.window?.rootViewController = jobsViewController
         view.window?.makeKeyAndVisible()
     }
     /*

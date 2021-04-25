@@ -9,9 +9,10 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+//Sign up view, creates new user
 class SignUpViewController: UIViewController {
 
-    
+    //All fields
     @IBOutlet weak var tfFirstName: UITextField!
     @IBOutlet weak var tfLastName: UITextField!
     @IBOutlet weak var tfEmail: UITextField!
@@ -24,6 +25,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var imgLaptop: UIImageView!
     @IBOutlet weak var imgLaptopOverlay: UIImageView!
     
+    //reference to LightAccent color
     var lightAccent : CGColor = Utilities.lightAccentCG()
     
     override func viewDidLoad() {
@@ -33,6 +35,7 @@ class SignUpViewController: UIViewController {
         setUp()
     }
     
+    //UI Setup
     func setUp(){
         lblError.alpha = 0
         Utilities.btnCornerRadiusBorderWidthBorderColor(btn: btnSignUp, r: 7, bw: 3, bc: lightAccent)
@@ -55,6 +58,7 @@ class SignUpViewController: UIViewController {
         Utilities.tfStyle(tf: tfPassword)
     }
     
+    //Creates new user upon signup click
     @IBAction func signUpTapped(_ sender: Any) {
         //Validate the fields
         let error = validateFields()
@@ -90,14 +94,6 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     
-//                    let user = User(firstname: firstName, lastname: lastName, email: email, password: password, uid: result!.user.uid)
-//
-//                    do {
-//                        try db.collection("users").document(result!.user.uid).setData(["" : user])
-//                    } catch let error {
-//                        print("Error writing user to Firestore: \(error)")
-//                    }
-
                     
                     //Transition into home screen
                     self.transitionToProfileSetup()
@@ -107,6 +103,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    //Transitions into profile set up page
     func transitionToProfileSetup(){
         //reference to homeviewcontroller
         let setUpViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.setUpViewController) as? SetUpViewController

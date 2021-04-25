@@ -8,9 +8,10 @@
 import UIKit
 import FirebaseAuth
 
+//Login view
 class LoginViewController: UIViewController {
 
-    
+    //All fields for log in
     @IBOutlet weak var tfEmail: UITextField!
     
     @IBOutlet weak var tfPassword: UITextField!
@@ -33,6 +34,7 @@ class LoginViewController: UIViewController {
         setUp()
     }
     
+    //UI styling function
     func setUp(){
         lblError.alpha = 0
         Utilities.btnCornerRadiusBorderWidthBorderColor(btn: btnLogin, r: 7, bw: 3, bc: Utilities.lightAccentCG())
@@ -49,6 +51,7 @@ class LoginViewController: UIViewController {
         Utilities.tfStyle(tf: tfPassword)
     }
 
+    //Upon login button click, authorize and transition
     @IBAction func loginTapped(_ sender: Any) {
         
         //Validate text fields
@@ -71,18 +74,19 @@ class LoginViewController: UIViewController {
                     self.lblError.alpha = 1
                 }
                 else {
-                    self.transitionToHome()
+                    self.transitionToJobs()
                 }
                 
             }
         }
     }
     
-    func transitionToHome(){
+    //transition to jobs page
+    func transitionToJobs(){
         //reference to homeviewcontroller
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let jobsViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.jobsViewController) as? JobListViewController
         
-        view.window?.rootViewController = homeViewController
+        view.window?.rootViewController = jobsViewController
         view.window?.makeKeyAndVisible()
     }
     
